@@ -14,6 +14,8 @@
 #import "PcmPlayer.h"
 #import "TTSConfig.h"
 
+#define TuringAPIKey @"499e70503ca944a48a2260fc36bd6673"
+
 typedef NS_OPTIONS(NSInteger, SynthesizeType) {
     NomalType           = 5,//普通合成
     UriType             = 6, //uri合成
@@ -34,11 +36,15 @@ typedef NS_OPTIONS(NSInteger, Status) {
 @property (nonatomic, strong) PcmPlayer *audioPlayer;
 @property (nonatomic, assign) SynthesizeType synType;
 @property (nonatomic, assign) Status state;
+
+
+
 @end
 
 
 
 @implementation ViewController
+
 
 
 - (void)viewDidLoad {
@@ -85,9 +91,7 @@ typedef NS_OPTIONS(NSInteger, Status) {
     
     
     
-    
-    
-    
+
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
@@ -100,11 +104,6 @@ typedef NS_OPTIONS(NSInteger, Status) {
                             @"salt":salt,
                             @"sign":singMd5
                             };
-    
-    
-    //       NSLog(@"singMd5 == %@",singMd5);
-    //       NSLog(@"sing == %@",sign);
-    //    NSLog(@"paras == %@",paras);
     
     [manager GET:baseURL parameters:paras progress:^(NSProgress * _Nonnull downloadProgress) {
         
@@ -165,7 +164,7 @@ typedef NS_OPTIONS(NSInteger, Status) {
     //发音人,默认为”xiaoyan”;可以设置的参数列表可参考个性化发音人列表
     
     [_iFlySpeechSynthesizer
-     setParameter:@"xiaoyan"
+     setParameter:@"xiaomei"
      
      forKey:[IFlySpeechConstant VOICE_NAME]];
     

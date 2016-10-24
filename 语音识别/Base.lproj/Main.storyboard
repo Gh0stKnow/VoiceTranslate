@@ -56,8 +56,16 @@
                                     <action selector="clearBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X27-ZZ-phc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0i-If-7Ku">
+                                <frame key="frameInset" minX="172" minY="353" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="聊天"/>
+                                <connections>
+                                    <action selector="ChatBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hER-7l-1UF"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ht1-5V-LNu">
-                                <frame key="frameInset" minX="152" minY="308" width="71" height="40"/>
+                                <frame key="frameInset" minX="152" minY="296" width="71" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="听写"/>

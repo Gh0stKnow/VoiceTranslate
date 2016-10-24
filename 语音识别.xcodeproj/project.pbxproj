@@ -64,6 +64,7 @@
 		D75CE2CC1DB9C60900E087A0 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D75CE2561DB9C60900E087A0 /* UIWebView+AFNetworking.m */; };
 		D75CE2FE1DB9DD3100E087A0 /* TTSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D75CE2F91DB9DD3100E087A0 /* TTSConfig.m */; };
 		D75CE3051DB9DDD300E087A0 /* PcmPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D75CE3031DB9DDD300E087A0 /* PcmPlayer.m */; };
+		D7CEB4141DBB2F2B002FF93E /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CEB4131DBB2F2B002FF93E /* Foundation+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -209,6 +210,7 @@
 		D75CE3021DB9DDD300E087A0 /* PcmPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcmPlayer.h; sourceTree = "<group>"; };
 		D75CE3031DB9DDD300E087A0 /* PcmPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PcmPlayer.m; sourceTree = "<group>"; };
 		D75CE3041DB9DDD300E087A0 /* PcmPlayerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PcmPlayerDelegate.h; sourceTree = "<group>"; };
+		D7CEB4131DBB2F2B002FF93E /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		F013006D8F65C819545E7BF9 /* libPods-语音识别.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-语音识别.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -336,6 +338,7 @@
 		D75CE1901DB9BD4B00E087A0 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D7CEB4131DBB2F2B002FF93E /* Foundation+Log.m */,
 				D75CE18D1DB9BD3A00E087A0 /* NSString+MD5.h */,
 				D75CE18E1DB9BD3A00E087A0 /* NSString+MD5.m */,
 			);
@@ -676,6 +679,7 @@
 				D75CE2CC1DB9C60900E087A0 /* UIWebView+AFNetworking.m in Sources */,
 				BD20E3451CEB5B1B004088A9 /* main.m in Sources */,
 				D75CE25C1DB9C60900E087A0 /* AFSecurityPolicy.m in Sources */,
+				D7CEB4141DBB2F2B002FF93E /* Foundation+Log.m in Sources */,
 				D75CE3051DB9DDD300E087A0 /* PcmPlayer.m in Sources */,
 				D75CE25D1DB9C60900E087A0 /* AFURLRequestSerialization.m in Sources */,
 				D75CE2C71DB9C60900E087A0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
@@ -802,10 +806,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SKN3Z39B55;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/语音识别/AFNetworking-master",
+				);
 				INFOPLIST_FILE = "语音识别/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/语音识别";
 				PRODUCT_BUNDLE_IDENTIFIER = ghostknow.123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -818,10 +825,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SKN3Z39B55;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/语音识别/AFNetworking-master",
+				);
 				INFOPLIST_FILE = "语音识别/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/语音识别";
 				PRODUCT_BUNDLE_IDENTIFIER = ghostknow.123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
