@@ -3,7 +3,7 @@
 //  语音识别
 //
 //  Created by Xiaodong Ge on 2016/10/21.
-//  Copyright © 2016年 ZZBelieve. All rights reserved.
+//  Copyright © 2016年 xiaodong. All rights reserved.
 //
 
 #import "NSString+MD5.h"

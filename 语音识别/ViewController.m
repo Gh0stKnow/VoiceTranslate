@@ -3,7 +3,7 @@
 //  语音识别
 //
 //  Created by ghostknow on 16/5/17.
-//  Copyright © 2016年 ZZBelieve. All rights reserved.
+//  Copyright © 2016年 xiaodong. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -60,15 +60,23 @@ typedef NS_OPTIONS(NSInteger, Status) {
     
         _oriTextView.text = @"";
     
+    // 计算回调时间
+    
+
+    
     [[ZZiflyTool shareTool] startRecognizer:^(IFlySpeechError *error, NSString *result) {
         
-        
+        NSDate *oriDate = [NSDate date];
+        NSLog(@"oriDatea ===  %@", oriDate);
+        // 错误回调
         if (error) {
-            
             _oriTextView.text = error.errorDesc;
             return;
         } else {
             _oriTextView.text = [_oriTextView.text stringByAppendingString:(result ? result:@"没听到你说啥")];
+    
+            [self translateText];
+
             
         }
     }];
@@ -78,8 +86,16 @@ typedef NS_OPTIONS(NSInteger, Status) {
 
 // 翻译按钮
 - (IBAction)transBtnClick:(id)sender {
-    // 初始化string
+    
+    [self translateText];
+    
+}
 
+// 翻译方法
+- (void)translateText
+{
+    // 初始化string
+    
     NSString *oriText = _oriTextView.text;
     NSString *appid = @"20161021000030532";
     NSString *salt = @"858585858";
@@ -89,13 +105,14 @@ typedef NS_OPTIONS(NSInteger, Status) {
     NSString *sign = [NSString stringWithFormat:@"%@%@%@%@",appid,oriText,salt,sercet];
     NSString *singMd5= [NSString stringWithMD5:sign];
     
+    // 初始化AFN
     
-    
-
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
+    
+    // baidu翻译sdk参数
     NSDictionary *paras = @{
                             @"q":oriText,
                             @"from":@"zh",
@@ -105,11 +122,19 @@ typedef NS_OPTIONS(NSInteger, Status) {
                             @"sign":singMd5
                             };
     
+    
+
+    
+    
+    
     [manager GET:baseURL parameters:paras progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        //成功后的回调
         
+        NSDate *afterDate = [NSDate date];
+        NSLog(@"afterDatea ===  %@", afterDate);
+        
+        //成功后的回调
         NSLog(@"%@",responseObject);
         NSDictionary *dict = responseObject;
         if ([dict valueForKey:@"error_code"]) {
@@ -117,9 +142,10 @@ typedef NS_OPTIONS(NSInteger, Status) {
             return;
         } else {
             
-            //         NSLog(@"dict%@",[[dict valueForKey:@"trans_result"][0] valueForKey:@"dst"]);
+            
             
             _transTextView.text = [[dict valueForKey:@"trans_result"][0] valueForKey:@"dst"];
+            
             
         }
         
@@ -128,9 +154,8 @@ typedef NS_OPTIONS(NSInteger, Status) {
         
     }];
     
-    
-}
 
+}
 
 // 清除文本按钮
 - (IBAction)clearBtnClick:(id)sender {
@@ -140,12 +165,17 @@ typedef NS_OPTIONS(NSInteger, Status) {
 }
 
 - (IBAction)speekBtnClick:(id)sender {
-    
+    [self speakText];
+}
+
+
+
+- (void)speakText {
     _iFlySpeechSynthesizer
     = [IFlySpeechSynthesizer sharedInstance];
     _iFlySpeechSynthesizer.delegate
     = self;
-
+    
     
     _synType = NomalType;
     
@@ -178,11 +208,9 @@ typedef NS_OPTIONS(NSInteger, Status) {
     ////asr_audio_path保存录音文件路径，如不再需要，设置value为nil表示取消，默认目录是documents
     
     [_iFlySpeechSynthesizer
-     setParameter:@"tts.pcm"
+     setParameter:nil
      
      forKey:[IFlySpeechConstant TTS_AUDIO_PATH]];
-    
-    
     
     NSString* str= _transTextView.text;
     
@@ -190,8 +218,7 @@ typedef NS_OPTIONS(NSInteger, Status) {
     
     [_iFlySpeechSynthesizer startSpeaking:str];
 
-    
-    
+
 }
 
 
