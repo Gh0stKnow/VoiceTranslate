@@ -4,17 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GDPerformanceView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-语音识别.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3ADAA07B23EA61A8B05DF659A6AFBA7E</key>
+		<key>B407FA93489C488591C069FA1EBCFC59</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E91DF5327483DA591BB75898704154FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

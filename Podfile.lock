@@ -1,3 +1,12 @@
-PODFILE CHECKSUM: b7fbd74c8ac959f6783daa1176eb39c53e34bfe9
+PODS:
+  - GDPerformanceView (1.0.9)
+
+DEPENDENCIES:
+  - GDPerformanceView (~> 1.0.9)
+
+SPEC CHECKSUMS:
+  GDPerformanceView: 6d769ca141177e8ee451a1566e2129be19080b05
+
+PODFILE CHECKSUM: f3753b0948c5f653be7cc3d4c53bacdefbd2b5f1
 
 COCOAPODS: 1.0.1

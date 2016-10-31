@@ -16,6 +16,10 @@
 
 #define TuringAPIKey @"499e70503ca944a48a2260fc36bd6673"
 
+// 时间宏
+#define TICK   NSDate *startTime = [NSDate date]
+#define TOCK   NSLog(@"Time: %f", -[startTime timeIntervalSinceNow])
+
 typedef NS_OPTIONS(NSInteger, SynthesizeType) {
     NomalType           = 5,//普通合成
     UriType             = 6, //uri合成
@@ -59,10 +63,6 @@ typedef NS_OPTIONS(NSInteger, Status) {
 - (IBAction)isrBtnClick:(id)sender {
     
         _oriTextView.text = @"";
-    
-    // 计算回调时间
-    
-
     
     [[ZZiflyTool shareTool] startRecognizer:^(IFlySpeechError *error, NSString *result) {
         
@@ -116,15 +116,11 @@ typedef NS_OPTIONS(NSInteger, Status) {
     NSDictionary *paras = @{
                             @"q":oriText,
                             @"from":@"zh",
-                            @"to":@"yue",
+                            @"to":@"en",
                             @"appid":appid,
                             @"salt":salt,
                             @"sign":singMd5
                             };
-    
-    
-
-    
     
     
     [manager GET:baseURL parameters:paras progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -171,30 +167,37 @@ typedef NS_OPTIONS(NSInteger, Status) {
 
 
 - (void)speakText {
-    _iFlySpeechSynthesizer
-    = [IFlySpeechSynthesizer sharedInstance];
-    _iFlySpeechSynthesizer.delegate
-    = self;
     
+    TICK;
+    
+    NSString* str= _transTextView.text;
+    
+    [_iFlySpeechSynthesizer startSpeaking:str];
+    
+    
+    
+    _iFlySpeechSynthesizer = [IFlySpeechSynthesizer sharedInstance];
+    
+    _iFlySpeechSynthesizer.delegate = self;
+    
+    TOCK;
     
     _synType = NomalType;
     
     [_iFlySpeechSynthesizer
      setParameter:@"50"
-     
      forKey:[IFlySpeechConstant SPEED]];
     
     //合成的音量;取值范围
     
     [_iFlySpeechSynthesizer
      setParameter:@"50"
-     
      forKey:[IFlySpeechConstant VOLUME]];
     
     //发音人,默认为”xiaoyan”;可以设置的参数列表可参考个性化发音人列表
     
     [_iFlySpeechSynthesizer
-     setParameter:@"xiaomei"
+     setParameter:@"xiaoyan"
      
      forKey:[IFlySpeechConstant VOICE_NAME]];
     
@@ -202,7 +205,6 @@ typedef NS_OPTIONS(NSInteger, Status) {
     
     [_iFlySpeechSynthesizer
      setParameter:@"8000"
-     
      forKey:[IFlySpeechConstant SAMPLE_RATE]];
     
     ////asr_audio_path保存录音文件路径，如不再需要，设置value为nil表示取消，默认目录是documents
@@ -212,11 +214,7 @@ typedef NS_OPTIONS(NSInteger, Status) {
      
      forKey:[IFlySpeechConstant TTS_AUDIO_PATH]];
     
-    NSString* str= _transTextView.text;
-    
-    
-    
-    [_iFlySpeechSynthesizer startSpeaking:str];
+
 
 
 }

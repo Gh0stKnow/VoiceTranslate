@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E91DF5327483DA591BB75898704154FC'
-               BlueprintName = 'Pods-语音识别'
+               BlueprintIdentifier = 'B407FA93489C488591C069FA1EBCFC59'
+               BlueprintName = 'GDPerformanceView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-语音识别.a'>
+               BuildableName = 'libGDPerformanceView.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -7,41 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C48C7B28B71956E3DC30BF3FA9C2F2C /* Pods-语音识别-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D13770CB47C012DE9E5E52750EFA8 /* Pods-语音识别-dummy.m */; };
-		2E512A36E42059EB6AD92B74707A125C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		07A9C7F173DC9F1C564592B956EEDF6D /* Pods-语音识别-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B23D13770CB47C012DE9E5E52750EFA8 /* Pods-语音识别-dummy.m */; };
+		362EB065E1049C93C96D6F8400C24769 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */; };
+		4C1546A2618A1D2B5A88DBE536616DCA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */; };
+		692A848FD956BEC032918B873E0629CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		7371A1537737C98FAE45E1348361E162 /* GDPerformanceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 480E80730FD1869AC5D4C3059CB43000 /* GDPerformanceView.m */; };
+		760BF90B0650AAE2EFDB6166B85EF84F /* GDMarginLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D337675BD400AF37D8BCC31453A4A9D /* GDMarginLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D77722F7FF2038B4CA709999F095FF4 /* GDPerformanceView.h in Headers */ = {isa = PBXBuildFile; fileRef = F605B51354B025528F2DDA814C438E40 /* GDPerformanceView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		852C7B0104E5ADF11AA191914913F6EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */; };
+		A528DDE601DBE3AE9CA2D7ABFD52D5DD /* GDMarginLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5079C70A61E8298F66C98DD555D8CE2F /* GDMarginLabel.m */; };
+		ADBD5BE77AEE3754908BD50686B269FA /* GDPerformanceMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2833851951DC0F8F393DF73CD0E4A04E /* GDPerformanceMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1483980643DCB186BAFE65145BE6504 /* GDPerformanceView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C3D97DE89C2AC71BD22FA0E8FCC95F /* GDPerformanceView-dummy.m */; };
+		FCAE2ED83BB9EE1B906B440D1BF586D7 /* GDPerformanceMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = CABE153CCAAE8E4A14B5C060709B04CB /* GDPerformanceMonitor.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6E846CA9ED5D1834D71B324819D5D2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B407FA93489C488591C069FA1EBCFC59;
+			remoteInfo = GDPerformanceView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		03F26C074F86B17E3AADFA8D886D4DF2 /* GDPerformanceView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GDPerformanceView-prefix.pch"; sourceTree = "<group>"; };
 		0463FE1006FD5B779EA4E17EC26D1095 /* Pods-语音识别-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-语音识别-resources.sh"; sourceTree = "<group>"; };
+		08C3D97DE89C2AC71BD22FA0E8FCC95F /* GDPerformanceView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GDPerformanceView-dummy.m"; sourceTree = "<group>"; };
+		091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		27419BDA07607370675066F9B1F925CD /* Pods-语音识别.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-语音识别.debug.xcconfig"; sourceTree = "<group>"; };
+		2833851951DC0F8F393DF73CD0E4A04E /* GDPerformanceMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDPerformanceMonitor.h; path = GDPerformanceView/GDPerformanceMonitoring/GDPerformanceMonitor.h; sourceTree = "<group>"; };
+		449ABFDD6B06DB8F4232AF089C7D9207 /* libPods-语音识别.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-语音识别.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		480E80730FD1869AC5D4C3059CB43000 /* GDPerformanceView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDPerformanceView.m; path = GDPerformanceView/GDPerformanceMonitoring/GDPerformanceView.m; sourceTree = "<group>"; };
+		4D337675BD400AF37D8BCC31453A4A9D /* GDMarginLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDMarginLabel.h; path = GDPerformanceView/GDPerformanceMonitoring/GDMarginLabel.h; sourceTree = "<group>"; };
+		5079C70A61E8298F66C98DD555D8CE2F /* GDMarginLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDMarginLabel.m; path = GDPerformanceView/GDPerformanceMonitoring/GDMarginLabel.m; sourceTree = "<group>"; };
 		5351E1AF07AED82EA457A00F033574CE /* Pods-语音识别.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-语音识别.release.xcconfig"; sourceTree = "<group>"; };
+		75A5005AE5A9D7EF20BA244436471AD0 /* GDPerformanceView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDPerformanceView.xcconfig; sourceTree = "<group>"; };
 		75D9DCFD69EBB115948A0A2F55F0EF51 /* Pods-语音识别-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-语音识别-frameworks.sh"; sourceTree = "<group>"; };
 		7628A0F67FAB8893630FCA28C1E82DC1 /* Pods-语音识别-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-语音识别-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94EE4DE2F634D40241E55855A7F379CC /* libPods-语音识别.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-语音识别.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		B23D13770CB47C012DE9E5E52750EFA8 /* Pods-语音识别-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-语音识别-dummy.m"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CABE153CCAAE8E4A14B5C060709B04CB /* GDPerformanceMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GDPerformanceMonitor.m; path = GDPerformanceView/GDPerformanceMonitoring/GDPerformanceMonitor.m; sourceTree = "<group>"; };
 		CFAAAC93E4B9C882D01B1D0124EAB2C8 /* Pods-语音识别-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-语音识别-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E82FCDE1804FFFC6ED18DC4365DDB8B8 /* libGDPerformanceView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGDPerformanceView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F605B51354B025528F2DDA814C438E40 /* GDPerformanceView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDPerformanceView.h; path = GDPerformanceView/GDPerformanceMonitoring/GDPerformanceView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DFFF0756008F70B9308CF95BBF4C52AB /* Frameworks */ = {
+		A7926B85AD8211B0F7EFD127FFC02B21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E512A36E42059EB6AD92B74707A125C /* Foundation.framework in Frameworks */,
+				852C7B0104E5ADF11AA191914913F6EA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5ED8194F6BB8D2AD3B8C5DE698E9340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692A848FD956BEC032918B873E0629CC /* Foundation.framework in Frameworks */,
+				4C1546A2618A1D2B5A88DBE536616DCA /* QuartzCore.framework in Frameworks */,
+				362EB065E1049C93C96D6F8400C24769 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */,
 			);
-			name = iOS;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13D33CDE774152500811E2813F9E42A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E82FCDE1804FFFC6ED18DC4365DDB8B8 /* libGDPerformanceView.a */,
+				449ABFDD6B06DB8F4232AF089C7D9207 /* libPods-语音识别.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4663E69EE6228EB78940970FD3ED160A /* GDPerformanceView */ = {
+			isa = PBXGroup;
+			children = (
+				4D337675BD400AF37D8BCC31453A4A9D /* GDMarginLabel.h */,
+				5079C70A61E8298F66C98DD555D8CE2F /* GDMarginLabel.m */,
+				2833851951DC0F8F393DF73CD0E4A04E /* GDPerformanceMonitor.h */,
+				CABE153CCAAE8E4A14B5C060709B04CB /* GDPerformanceMonitor.m */,
+				F605B51354B025528F2DDA814C438E40 /* GDPerformanceView.h */,
+				480E80730FD1869AC5D4C3059CB43000 /* GDPerformanceView.m */,
+				B65BEFD9AFAED1CD0EEA5E81491279A0 /* Support Files */,
+			);
+			path = GDPerformanceView;
 			sourceTree = "<group>";
 		};
 		72F034C6FC1A3F6BA0470E381B0A5B63 /* Targets Support Files */ = {
@@ -56,26 +121,30 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AB22AF586B77DB40E848ABD6016DF57F /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				8757E3E9895465EBA8BFF91DD91F4D86 /* Pods */,
+				13D33CDE774152500811E2813F9E42A1 /* Products */,
 				72F034C6FC1A3F6BA0470E381B0A5B63 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		AB22AF586B77DB40E848ABD6016DF57F /* Products */ = {
+		8757E3E9895465EBA8BFF91DD91F4D86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				94EE4DE2F634D40241E55855A7F379CC /* libPods-语音识别.a */,
+				4663E69EE6228EB78940970FD3ED160A /* GDPerformanceView */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B65BEFD9AFAED1CD0EEA5E81491279A0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				75A5005AE5A9D7EF20BA244436471AD0 /* GDPerformanceView.xcconfig */,
+				08C3D97DE89C2AC71BD22FA0E8FCC95F /* GDPerformanceView-dummy.m */,
+				03F26C074F86B17E3AADFA8D886D4DF2 /* GDPerformanceView-prefix.pch */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/GDPerformanceView";
 			sourceTree = "<group>";
 		};
 		CB700E1107ED622F4937F0ADC04145E4 /* Pods-语音识别 */ = {
@@ -93,23 +162,64 @@
 			path = "Target Support Files/Pods-语音识别";
 			sourceTree = "<group>";
 		};
+		DFDE779C6E5D3445E0CB8CCB8D424449 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A817CAE99C81EE68006DC1E60E295C0A /* Foundation.framework */,
+				23016F69B2480F44D0BB5526B39192FA /* QuartzCore.framework */,
+				091D54A73E1E8BB182C9D7D245AF1C2F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		89FDD1DAAAFA723417AB634AEFDB8FCB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760BF90B0650AAE2EFDB6166B85EF84F /* GDMarginLabel.h in Headers */,
+				ADBD5BE77AEE3754908BD50686B269FA /* GDPerformanceMonitor.h in Headers */,
+				7D77722F7FF2038B4CA709999F095FF4 /* GDPerformanceView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		3ADAA07B23EA61A8B05DF659A6AFBA7E /* Pods-语音识别 */ = {
+		B407FA93489C488591C069FA1EBCFC59 /* GDPerformanceView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5AD5BDAAD400FD632E5B2A9B65051EE /* Build configuration list for PBXNativeTarget "Pods-语音识别" */;
+			buildConfigurationList = 4F140883F8ADF38F9AFF53490F2F3532 /* Build configuration list for PBXNativeTarget "GDPerformanceView" */;
 			buildPhases = (
-				4A1D10B39D58AC008163054BDBB05EDA /* Sources */,
-				DFFF0756008F70B9308CF95BBF4C52AB /* Frameworks */,
+				907FA8761EF2BEA4385F7D65C8358311 /* Sources */,
+				B5ED8194F6BB8D2AD3B8C5DE698E9340 /* Frameworks */,
+				89FDD1DAAAFA723417AB634AEFDB8FCB /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = GDPerformanceView;
+			productName = GDPerformanceView;
+			productReference = E82FCDE1804FFFC6ED18DC4365DDB8B8 /* libGDPerformanceView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E91DF5327483DA591BB75898704154FC /* Pods-语音识别 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A5D7BFFF94A87E9948E9F7A4EB6E558 /* Build configuration list for PBXNativeTarget "Pods-语音识别" */;
+			buildPhases = (
+				D45061797FE6A6EF13BFE478198C7E2D /* Sources */,
+				A7926B85AD8211B0F7EFD127FFC02B21 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4B7D48C4519ADD545666375FDD8182D /* PBXTargetDependency */,
+			);
 			name = "Pods-语音识别";
 			productName = "Pods-语音识别";
-			productReference = 94EE4DE2F634D40241E55855A7F379CC /* libPods-语音识别.a */;
+			productReference = 449ABFDD6B06DB8F4232AF089C7D9207 /* libPods-语音识别.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -129,27 +239,69 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = AB22AF586B77DB40E848ABD6016DF57F /* Products */;
+			productRefGroup = 13D33CDE774152500811E2813F9E42A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3ADAA07B23EA61A8B05DF659A6AFBA7E /* Pods-语音识别 */,
+				B407FA93489C488591C069FA1EBCFC59 /* GDPerformanceView */,
+				E91DF5327483DA591BB75898704154FC /* Pods-语音识别 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4A1D10B39D58AC008163054BDBB05EDA /* Sources */ = {
+		907FA8761EF2BEA4385F7D65C8358311 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C48C7B28B71956E3DC30BF3FA9C2F2C /* Pods-语音识别-dummy.m in Sources */,
+				A528DDE601DBE3AE9CA2D7ABFD52D5DD /* GDMarginLabel.m in Sources */,
+				FCAE2ED83BB9EE1B906B440D1BF586D7 /* GDPerformanceMonitor.m in Sources */,
+				C1483980643DCB186BAFE65145BE6504 /* GDPerformanceView-dummy.m in Sources */,
+				7371A1537737C98FAE45E1348361E162 /* GDPerformanceView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D45061797FE6A6EF13BFE478198C7E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A9C7F173DC9F1C564592B956EEDF6D /* Pods-语音识别-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F4B7D48C4519ADD545666375FDD8182D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDPerformanceView;
+			target = B407FA93489C488591C069FA1EBCFC59 /* GDPerformanceView */;
+			targetProxy = 6E846CA9ED5D1834D71B324819D5D2BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		095C43D154B34CF3E3DAE283FA0F1CD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27419BDA07607370675066F9B1F925CD /* Pods-语音识别.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -230,28 +382,7 @@
 			};
 			name = Debug;
 		};
-		A240995016E0894200A6AA997A4B899E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27419BDA07607370675066F9B1F925CD /* Pods-语音识别.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		F63A1603A1C8E27959D823ED325CF5B0 /* Release */ = {
+		7D8863D05C29C8005BD36B5E6D946807 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5351E1AF07AED82EA457A00F033574CE /* Pods-语音识别.release.xcconfig */;
 			buildSettings = {
@@ -272,6 +403,48 @@
 			};
 			name = Release;
 		};
+		DBA8BD8A00F1798BE0BA1C3EE8C9C9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A5005AE5A9D7EF20BA244436471AD0 /* GDPerformanceView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GDPerformanceView/GDPerformanceView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E254B60AC33BD7D0F0FF0C21F58754A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A5005AE5A9D7EF20BA244436471AD0 /* GDPerformanceView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GDPerformanceView/GDPerformanceView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,11 +457,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5AD5BDAAD400FD632E5B2A9B65051EE /* Build configuration list for PBXNativeTarget "Pods-语音识别" */ = {
+		4F140883F8ADF38F9AFF53490F2F3532 /* Build configuration list for PBXNativeTarget "GDPerformanceView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A240995016E0894200A6AA997A4B899E /* Debug */,
-				F63A1603A1C8E27959D823ED325CF5B0 /* Release */,
+				E254B60AC33BD7D0F0FF0C21F58754A6 /* Debug */,
+				DBA8BD8A00F1798BE0BA1C3EE8C9C9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A5D7BFFF94A87E9948E9F7A4EB6E558 /* Build configuration list for PBXNativeTarget "Pods-语音识别" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095C43D154B34CF3E3DAE283FA0F1CD4 /* Debug */,
+				7D8863D05C29C8005BD36B5E6D946807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

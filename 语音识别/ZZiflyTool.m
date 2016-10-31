@@ -54,6 +54,7 @@
             [iflyRecognizerView setParameter:instance.language forKey:[IFlySpeechConstant LANGUAGE]];
             //设置方言
             [iflyRecognizerView setParameter:instance.accent forKey:[IFlySpeechConstant ACCENT]];
+            
         }else if ([instance.language isEqualToString:[IATConfig english]]) {
             //设置语言
             [iflyRecognizerView setParameter:instance.language forKey:[IFlySpeechConstant LANGUAGE]];
@@ -95,7 +96,6 @@
     [self.iflyRecognizerView start];
 
 
-
 }
 
 
@@ -121,7 +121,6 @@
 
 
 }
-
 
 
 /**
